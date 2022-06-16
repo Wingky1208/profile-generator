@@ -1,16 +1,14 @@
 //Dependencies
 const inquirer = require('inquirer');
 const fs = require('fs');
-const jest = require('jest');
 const path = require('path');
 
 
 //Constructors
 
-const Engineer = require('./lib/engineer');
-const Intern = require('./lib/intern');
-const Manager = require('./lib/manager');
-const Employee = require('./lib/employee')
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
+const Manager = require('./lib/Manager');
 
 // Require Template
 const template = require('./src/template.js')
@@ -153,7 +151,7 @@ function initApp() {
     function generateHTML() {
         console.log("Generating Team Profile.... ");
         console.log(teamArr);
-        fs.writeFileSync(path.join(__dirname, "./dist/index.html"), template(teamArr));
+        fs.writeFileSync(path.join(path.resolve(__dirname, 'dist'), 'index.html'), template(teamArr));
     }
     addManager();
 
