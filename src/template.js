@@ -6,7 +6,7 @@ const createProfile = team => {
     // Create Manager Profile
     const createManager = manager => {
         return `
-      <div class="card employee-card manager-card mx-5"  style="width: 18rem;">
+      <div class="card employee-card manager-card"  style="width: 18rem;">
           <div class="card-header text-center">
               <h2 class="card-title">${manager.getName()}</h2>
               <h4 class="card-title">Title: ${manager.getRole()}</h4>
@@ -27,7 +27,7 @@ const createProfile = team => {
     // Create Engineer Profile
     const createEngineer = engineer => {
         return `
-      <div class="card employee-card engineer-card mx-5"  style="width: 18rem;">
+      <div class="card employee-card engineer-card"  style="width: 18rem;">
           <div class="card-header text-center">
               <h2 class="card-title">${engineer.getName()}</h2>
               <h4 class="card-title">Title: ${engineer.getRole()}</h4>
@@ -46,7 +46,7 @@ const createProfile = team => {
     // Create Intern Profile
     const createIntern = intern => {
         return `
-      <div class="card employee-card intern-card mx-5"  style="width: 18rem;">
+      <div class="card employee-card intern-card"  style="width: 18rem;">
           <div class="card-header text-center">
               <h2 class="card-title">${intern.getName()}</h2>
               <h4 class="card-title">Title: ${intern.getRole()}</h4>
@@ -89,9 +89,9 @@ module.exports = team => {
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <div class="jumbotron-fluid bg-primary">
+      <div class="header jumbotron-fluid bg-primary">
           
-                  <h1 class="text-center">The Dream Team</h1>  
+                  <h1 class="text-center py-20">The Perfect Team</h1>  
       </div>
       <div class="container">
           <div class="row d-flex justify-content-center">
